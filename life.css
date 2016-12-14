@@ -1,0 +1,77 @@
+.navbar-default {
+  background-color: rgba(0, 0, 0, 0.0);
+  border: none;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+#top {
+  min-height: 760px;
+  background: url(lake.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.center {
+  text-align: center;
+  padding-top: 10%;
+  color:  #262626;
+}
+
+h1 {
+  text-transform: lowercase;
+  font-size: 7em;
+}
+
+h3 {
+  line-height: 2em;
+  margin-bottom: 2%;
+}
+
+h4 {
+  margin-top: 2%;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.0);
+  padding: 1em;
+  font-size: 1.2em;
+  margin: 1% auto;
+  border: 2px solid black;
+  font-size: 1.3em;
+  color: #262626;
+  transition: background-color 1s, color 0.5s, border 1s;
+  -webkit-transition: background-color 1s, color 0.5s, border 1s; /*adds browser support for transitions*/
+  -moz-transition: background-color 1s, color 0.5s, border 1s;
+}
+
+button:hover {
+  background-color: #61B2B2;
+  color: #e7e7e7;
+  border: none;
+}
+
+section {
+  min-height: 700px;
+}
+
+#about {
+  background: #FF9C61;
+}
+
+#services {
+  background: #61B2B2;
+}
+
+#contact {
+  background: #B24200;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  background: #262626;
+  margin: 0;
+}
