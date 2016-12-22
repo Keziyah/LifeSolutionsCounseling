@@ -1,5 +1,4 @@
-//Smooth scroll. From W3 schools. 
-$(document).ready(function(){
+//Smooth scroll. From W3 Schools
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -22,4 +21,8 @@ $(document).ready(function(){
       });
     } // End if
   });
-});
+
+//reveals map in contact section
+  $("#btn-map").on("click", function() {
+    $(".tinted-image").fadeOut("slow");
+  });
