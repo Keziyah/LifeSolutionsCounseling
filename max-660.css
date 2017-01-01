@@ -1,0 +1,120 @@
+/*Media queries for devices less than 660px width. *
+/* ~~~~~~~~~  DA NAVBARRRRR  ~~~~~~~~~~ */
+.navbar-brand {
+  font-size: 0.8em;
+}
+
+/*~~~~~~~~~ HEADER TEXT AND BUTTON ~~~~~~~ */
+
+h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+h3 {
+  line-height: 1em;
+  font-size: 1.3em;
+}
+
+button {
+  background-color: rgba(178, 98, 50, 0.1);
+  padding: 0.5em;
+  font-size: 1.0em;
+  margin-top: 7%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* SECTIONS */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.top-section {
+  margin-top: 5%;
+}
+
+.top-section h3 {
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.top-section h3 p {
+  font-size: 4em;
+}
+
+/* EACH SECTION's HEADER (which is at the bottom right) */
+
+.section-header {
+  opacity: 0.6;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  font-size: 2.3em;
+  text-align: right;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.big-white-text {
+  margin-left: 35%;
+  margin-top: -5%;
+  width: 90%;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ABOUT */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.description {
+  font-size: 1.1em;
+  color: white;
+  font-weight:300;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* SERVICES */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* each of the 8 sections on the grid */
+.service {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 0 5% 5% 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* the icons */
+
+.service .fa-5x {
+  font-size: 4em;
+  margin-left: 20%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.service p {
+  font-size: 1em;
+  text-align: center;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* CONTACT */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* FOOTER */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+footer p {
+  font-size: 0.7em;
+  color: green;
+}

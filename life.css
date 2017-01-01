@@ -1,6 +1,7 @@
 
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -8,10 +9,14 @@ html, body {
 /*because the 'overflow-x: hidden' interferes with smooth scroll if you
 use it to style the html */
  body {
-    width: 100%;
+    max-width: 100%;      /*responsive */
     overflow-x: hidden;
     overflow-y: auto;
     box-sizing: border-box;
+}
+
+img, iframe {
+  max-width: 100%;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* HERO IMAGE STUFF */
@@ -57,10 +62,15 @@ use it to style the html */
   margin-bottom: 0;
 }
 
+.navbar-toggle {   /*the mobile menu bar */
+  min-width: 48px;
+  min-height: 48px;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~ HERO IMAGE ~~~~~~~~~~~~~~~~*/
 #top {
-  min-height: 760px;
-  background: url(lake.jpg);
+  background:
+              url(lake.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -114,7 +124,7 @@ h3 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 300;
 }
-/*"professional...." */
+/*"professional counseling services....." */
 #tagline {
   -webkit-animation: 8s ease 0s normal forwards 1 fadein; /* Safari, Chrome and Opera > 12.1 */
       -moz-animation: 8s ease 0s normal forwards 1 fadein; /* Firefox < 16 */
@@ -197,7 +207,9 @@ i.fa.fa-chevron-circle-down.fa-5x:hover {
 
 
 section {
-  min-height: 680px;
+  /*min-height: 680px; */
+  height: 100%;
+  width: 100%;
 }
 /*where the main content is (not the big white text at the bottom) */
  .top-section {
@@ -331,17 +343,17 @@ section {
 /*the div containing the map and the tinted image */
 
 #map {
-  min-height: 700px;
+  /*min-height: 700px; */
   float: left;
   margin: 0;
   padding-left: 0;
 }
 
 /* what disappears when you click to view the map */
-
+/* CSS allows multiple backgrounds. here, we have the gradient background and
+the sunset image together as one background */
 .tinted-image {
-  min-height: 700px;
-  min-width: 470px;
+  max-width: 100%;
   background:
     /* top, transparent color, faked with gradient */
     linear-gradient(
@@ -382,7 +394,6 @@ top of each other */
   float: right;
   margin: 0 auto;
   height: 100%;
-  min-height: 700px;
 }
 
 #right h3 {
