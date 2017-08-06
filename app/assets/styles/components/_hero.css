@@ -1,0 +1,9 @@
+@import '../base/_variables';
+
+.hero {
+    
+}
+
+.hero h1 {
+    font-family: $oswald; 
+}

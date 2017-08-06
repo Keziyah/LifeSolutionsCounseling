@@ -450,7 +450,42 @@ template {
   display: none;
 }
 
-* {
-    color: yellow; 
+/*COMPONENTS*/
+
+/*COLORS*/
+
+button {
+    font-family: 'Fjalla One', sans-serif; 
+    text-transform: uppercase; 
+    padding: 12px; 
+    background: #005277; 
+    border: 1px solid #005277; 
+    color: white; 
+    letter-spacing: 2px; 
+    -webkit-transition: all .5s ease; 
+    transition: all .5s ease; 
+    cursor: pointer;
 }
+
+button:hover {
+        border-radius: 30px; 
+        color: #005277; 
+        background: white; 
+        -webkit-transition: all .5s ease; 
+        transition: all .5s ease; 
+    }
+
+button:focus {
+        outline: none; 
+    }
+
+.hero {
+    
+}
+
+.hero h1 {
+    font-family: 'Oswald', sans-serif; 
+}
+
+
 

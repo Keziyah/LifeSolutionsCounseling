@@ -1,0 +1,24 @@
+@import '../base/_variables';
+
+button {
+    font-family: $fjalla; 
+    text-transform: uppercase; 
+    padding: 12px; 
+    background: $main-blue; 
+    border: 1px solid $main-blue; 
+    color: white; 
+    letter-spacing: 2px; 
+    transition: all .5s ease; 
+    cursor: pointer; 
+
+    &:hover {
+        border-radius: 30px; 
+        color: $main-blue; 
+        background: white; 
+        transition: all .5s ease; 
+    }
+
+    &:focus {
+        outline: none; 
+    }
+}

@@ -1,6 +1,9 @@
 @import "normalize.css";
 
-* {
-    color: yellow; 
-}
+
+/*COMPONENTS*/
+@import 'components/_btn'; 
+@import 'components/_hero';
+
+
 
