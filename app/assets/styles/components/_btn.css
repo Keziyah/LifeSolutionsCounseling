@@ -13,7 +13,8 @@ button {
 
     &:hover {
         border-radius: 30px; 
-        border: 3px solid $main-blue; 
+        /* border: 3px solid $main-blue;  */
+        box-shadow: inset 0px 0px 0px 3px $main-blue;
         color: $main-blue; 
         background: white; 
         transition: all .3s ease;

@@ -452,6 +452,10 @@ template {
 
 /*COMPONENTS*/
 
+body {
+    /* margin-top: 70px; */
+}
+
 /*COLORS AND FONTS*/
 
 /*Breakpoints*/
@@ -471,7 +475,9 @@ button {
 
 button:hover {
         border-radius: 30px; 
-        border: 3px solid #005277; 
+        /* border: 3px solid $main-blue;  */
+        -webkit-box-shadow: inset 0px 0px 0px 3px #005277;
+                box-shadow: inset 0px 0px 0px 3px #005277;
         color: #005277; 
         background: white; 
         -webkit-transition: all .3s ease; 
@@ -546,6 +552,16 @@ button:focus {
             display: block
     } 
         }
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 70px;
+    background: #000; 
+}
 
 
 
