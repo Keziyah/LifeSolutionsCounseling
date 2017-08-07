@@ -3,6 +3,10 @@
 .hero {
     height: 100vh;
     width: 100%; 
+    background-image: url('/assets/images/womanchild.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
 
     &__content {
         padding-top: 7%; 
@@ -10,6 +14,7 @@
 
         &--tagline {
             text-align: center; 
+            margin: 0 auto; 
         }
     }
 
@@ -22,7 +27,8 @@
     text-transform: uppercase; 
     color: black; 
     margin-top:0;
-    margin-bottom: 5%; 
+    margin-bottom: 5%;
+    background-color: rgba(255, 255, 255, 0.4); 
 
     @media screen and (max-width: 767px) {
         font-size: 2em; 
@@ -32,11 +38,13 @@
 
     h3 {
         font-family: $lato; 
-        color: black; 
-        padding-top: 5%; 
+        color: white; 
+        margin: 5% 0 auto auto; 
         letter-spacing: 2px;
         text-align: center;  
         margin-bottom: 20px; 
+        background-color: rgba(0, 0, 0, 0.3);
+        // width: 90%; 
 
          @media screen and (max-width: 767px) {
             font-size: 1.3em; 
