@@ -1,0 +1,23 @@
+@import '../base/_variables'; 
+
+.overview {
+    display: flex; 
+    flex-direction: row; 
+    padding-top: 5em;  
+    padding-bottom: 5em; 
+    
+    &__item {
+        text-align: center; 
+
+        &--header {
+            font-family: $lato; 
+            font-size: 2.5em; 
+            color: $main-brown; 
+        }
+
+        &--p {
+            font-size: 1.5em; 
+        }
+    }
+
+}

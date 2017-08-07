@@ -1,0 +1,15 @@
+@import '../base/_variables';
+
+/*LINKS*/
+
+a {
+    color: inherit; 
+    &:hover {
+        text-decoration: none;
+        transition: all .2s ease-in; 
+
+        &:hover {
+            color: $main-blue;
+        }
+    }
+}

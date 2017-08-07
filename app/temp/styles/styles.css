@@ -478,10 +478,11 @@ button:hover {
         /* border: 3px solid $main-blue;  */
         -webkit-box-shadow: inset 0px 0px 0px 3px #005277;
                 box-shadow: inset 0px 0px 0px 3px #005277;
-        color: #005277; 
-        background: white; 
-        -webkit-transition: all .3s ease; 
+        /* color: $main-blue; 
+        background: white;  */
+        -webkit-transition: all .3s ease;
         transition: all .3s ease;
+        
     }
 
 button:focus {
@@ -491,7 +492,7 @@ button:focus {
 .hero {
     height: 100vh;
     width: 100%; 
-    background-image: url('/assets/images/womanchild.png'); 
+    background-image: url('/assets/images/working.png'); 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -506,6 +507,7 @@ button:focus {
 .hero__content--tagline {
             text-align: center; 
             margin: 0 auto; 
+            
         }
 
 .hero h1 {
@@ -518,7 +520,7 @@ button:focus {
     color: black; 
     margin-top:0;
     margin-bottom: 5%;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (max-width: 767px) {
@@ -536,7 +538,7 @@ button:focus {
         letter-spacing: 2px;
         text-align: center;  
         margin-bottom: 20px; 
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.5);
         // width: 90%;
     }
 
@@ -562,14 +564,70 @@ button:focus {
         }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    height: 70px;
-    background: #000; 
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0å);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 50px; 
+    z-index: 10; 
+    padding: 0 3em;
 }
+
+.header h4 {
+    float: right;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: 'Oswald', sans-serif; 
+    text-transform: uppercase; 
+}
+
+.overview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; 
+    -webkit-box-orient: horizontal; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: row; 
+            flex-direction: row; 
+    padding-top: 5em;  
+    padding-bottom: 5em;
+
+}
+
+.overview__item {
+        text-align: center;
+    }
+
+.overview__item--header {
+            font-family: 'Lato', sans-serif; 
+            font-size: 2.5em; 
+            color: #995300; 
+        }
+
+.overview__item--p {
+            font-size: 1.5em; 
+        }
+
+/*BASE*/
+
+/*LINKS*/
+
+a {
+    color: inherit;
+}
+
+a:hover {
+        text-decoration: none;
+        -webkit-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+    }
+
+a:hover:hover {
+            color: #005277;
+        } 
 
 
 
