@@ -1,0 +1,36 @@
+@import '../base/_variables';
+
+.about {
+
+    background: $main-blue; 
+    color: white; 
+    min-height: 30em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+    .container {
+        display: flex; 
+        flex-direction: row; 
+    } 
+
+    p {
+        font-family: $lato; 
+        font-size: 1.5em; 
+        line-height: 1.7em; 
+    }
+
+    &__words {
+
+        p {
+            width: 90%; 
+        }
+    }
+
+    &__pic {
+        p {
+            text-align: center; 
+        }
+    }
+
+
+}

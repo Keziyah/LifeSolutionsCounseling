@@ -13,3 +13,8 @@ a {
         }
     }
 }
+
+.section-header {
+    font-family: $oswald; 
+    text-transform: uppercase;
+}

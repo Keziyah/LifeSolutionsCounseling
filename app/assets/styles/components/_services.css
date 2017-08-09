@@ -1,0 +1,64 @@
+@import '../base/_variables';
+
+.services {
+
+    .section-header {
+        color: $main-blue; 
+    }
+
+    &__we-offer {
+        text-align: center; 
+        font-family: $lato; 
+        font-size: 3em; 
+        padding-top: 1em; 
+    }
+
+    &__icons {
+        display: flex; 
+        flex-direction: column; 
+        padding: 4em 3em;  
+        
+        &--row {
+            display: flex; 
+            flex-direction: row; 
+            justify-content: space-around;
+            text-align: center; 
+            font-family: $lato; 
+            padding: 2em; 
+            
+        }
+
+        &--single {
+            width: 33.33%; 
+        }
+    }
+}
+
+.call {
+    text-align: center; 
+    font-family: $lato; 
+
+    h1 {
+        color: $main-brown; 
+        text-transform: uppercase; 
+        font-size: 3em; 
+    }
+    
+    &__info {
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center; 
+        padding: 4em;  
+        font-family: $lato; 
+
+        img {
+            // height: 50px; 
+            // width: 50px; 
+        }
+
+        h3 {
+            font-size: 1.5em; 
+        }
+    }
+}

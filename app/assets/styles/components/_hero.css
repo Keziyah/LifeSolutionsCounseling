@@ -62,5 +62,21 @@
             display: block; 
         }
     }
-    
+}
+
+.help {
+    background: $main-blue; 
+    height: 200px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    /* padding-top: 2%;  */
+    h1 {
+        margin: 0 auto; 
+        /* height: inherit;  */
+        text-align: center; 
+        color: white; 
+        font-size: 4.5em;  
+        font-family: $lato; 
+    }
 }
