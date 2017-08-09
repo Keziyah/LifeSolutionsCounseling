@@ -1,0 +1,25 @@
+@import '../base/_variables';
+
+.contact {
+    background: $main-blue;
+    color: white; 
+
+    &__main {
+        display: flex; 
+        flex-direction: row;
+
+        .left-col {
+            width: 33.33%;
+        }
+
+        .right-col {
+            width: 66.67%; 
+
+            #map {
+                width: 300px; 
+                height: 100px; 
+            }
+        }
+    }
+
+}

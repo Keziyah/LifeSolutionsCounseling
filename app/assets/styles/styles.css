@@ -8,6 +8,7 @@
 @import 'components/_overview';
 @import 'components/_about';
 @import 'components/_services'; 
+@import 'components/_contact';
 
 /*BASE*/
 @import 'base/_base'; 

@@ -748,6 +748,35 @@ button:focus {
             font-size: 1.5em; 
         }
 
+.contact {
+    background: #005277;
+    color: white;
+
+}
+
+.contact__main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; 
+        -webkit-box-orient: horizontal; 
+        -webkit-box-direction: normal; 
+            -ms-flex-direction: row; 
+                flex-direction: row;
+    }
+
+.contact__main .left-col {
+            width: 33.33%;
+        }
+
+.contact__main .right-col {
+            width: 66.67%;
+        }
+
+.contact__main .right-col #map {
+                width: 300px; 
+                height: 100px; 
+            }
+
 /*BASE*/
 
 /*LINKS*/

@@ -14,3 +14,5 @@ node_modules/
 
 # OS or Editor folders
 .DS_Store
+app/secrets.js
+
