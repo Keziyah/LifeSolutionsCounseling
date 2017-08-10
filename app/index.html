@@ -195,11 +195,53 @@
                                 hi im left
                             </div> <!-- closes left-col-->
                             <div class="right-col">
-                                <div class="right-col__container"> 
+                                <div class="right-col__container">
+                                    <div id="map-conatainer"> 
                                     <div class="right-col__map" id="map"></div>  
+                                    </div>
                                 </div>
                                 <div class="right-col__form">
+                                    <form action="">
+                                        <div class="input-row">
+                                            <div class="form-input col-md-4">
+                                                <div class="form-item">
+                                                    <label for="name">Name</label>
+                                                    <input type="text" id="name" name="name" placeholder="Your name..">
+                                                </div>
+                                            </div>
 
+                                            <div class="form-input col-md-4">
+                                                <div class="form-item">
+                                                    <label for="email">Email</label>
+                                                    <input type="text" id="email" name="email" placeholder="your@email.com">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-input col-md-4">
+                                                <div class="form-item">
+                                                    <label for="subject">Subject</label>
+                                                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="textarea-row form-item">
+                                            <label for="message">Message</label>
+                                            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                                        </div>
+
+                                        <div class="submit-row">
+                                            <div class="form-item">
+                                                <label for="robot">Are you a robot?</label>
+                                                <input type="text" id="robot" name="robot" placeholder="What is 3 + 2?">
+                                            </div>
+
+                                            <div class="btn-submit">
+                                                <button type="submit">Submit</button>
+                                            </div>
+
+                                        </div>
+                                    </form> 
                                 </div>
                             </div>  <!-- closes right-col-->
                         </div> <!-- closes contact__main-->
@@ -208,27 +250,14 @@
 
             </div>  <!-- closes content -->
     </div> <!-- closes main -->
-     <!-- <script src="/assets/src/jquery.js"></script>
-    <script src="/assets/src/index.js"></script>  -->
-    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-        google.maps.event.addDomListener(window, "load", initMap);
-      }
-
-</script>
+    
+    <script src="/assets/src/jquery.js"></script>
+    <script src="/assets/src/index.js"></script>   
 
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCapYDuwodpe-h2POaa0IrLH660rtzmn7Y&callback">
+    src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCapYDuwodpe-h2POaa0IrLH660rtzmn7Y&callback">
     </script>
 </body>
 
 </html>
+<!-- AIzaSyCapYDuwodpe-h2POaa0IrLH660rtzmn7Y -->

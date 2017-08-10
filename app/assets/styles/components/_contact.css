@@ -7,18 +7,62 @@
     &__main {
         display: flex; 
         flex-direction: row;
+        padding: 3em; 
 
         .left-col {
             width: 33.33%;
         }
 
         .right-col {
-            width: 66.67%; 
+            width: 66.67%;
+          
+        #map_container {
+            position: relative;
+        }
 
-            #map {
-                width: 300px; 
-                height: 100px; 
+        #map {
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 22.25%;
+            padding-top: 30px;
+            position: relative;
+            color: black; 
+        }
+
+        &__form {
+            color: black;
+            label {
+                font-family: $oswald; 
+                text-transform: uppercase; 
             }
+            .input-row {
+                width: 100%; 
+                padding: 2em 0;  
+                
+                .form-input {
+                    display: inline-block; 
+                    padding: 0; 
+                    width: 30%; 
+                    margin-right: 3%; 
+                }
+            }
+
+            .textarea-row {
+                width: 100%; 
+                padding: 3em 0; 
+            }
+
+            .form-item {
+                display: flex; 
+                flex-direction: column; 
+            }
+
+            .submit-row {
+                
+            }
+        }
+
+           
         }
     }
 

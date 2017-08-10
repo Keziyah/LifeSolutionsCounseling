@@ -762,6 +762,7 @@ button:focus {
         -webkit-box-direction: normal; 
             -ms-flex-direction: row; 
                 flex-direction: row;
+        padding: 3em;
     }
 
 .contact__main .left-col {
@@ -770,11 +771,57 @@ button:focus {
 
 .contact__main .right-col {
             width: 66.67%;
+
+           
+        }
+
+.contact__main .right-col #map_container {
+            position: relative;
         }
 
 .contact__main .right-col #map {
-                width: 300px; 
-                height: 100px; 
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 22.25%;
+            padding-top: 30px;
+            position: relative;
+            color: black; 
+        }
+
+.contact__main .right-col__form {
+            color: black;
+        }
+
+.contact__main .right-col__form label {
+                font-family: 'Oswald', sans-serif; 
+                text-transform: uppercase; 
+            }
+
+.contact__main .right-col__form .input-row {
+                width: 100%; 
+                padding: 2em 0;
+            }
+
+.contact__main .right-col__form .input-row .form-input {
+                    display: inline-block; 
+                    padding: 0; 
+                    width: 30%; 
+                    margin-right: 3%; 
+                }
+
+.contact__main .right-col__form .textarea-row {
+                width: 100%; 
+                padding: 3em 0; 
+            }
+
+.contact__main .right-col__form .form-item {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex; 
+                -webkit-box-orient: vertical; 
+                -webkit-box-direction: normal; 
+                    -ms-flex-direction: column; 
+                        flex-direction: column; 
             }
 
 /*BASE*/
