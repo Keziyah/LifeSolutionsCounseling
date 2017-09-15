@@ -1,0 +1,41 @@
+@import '../base/_variables';
+
+footer {
+    // position: relative; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // padding-top: 0.5rem;
+    height: 5vh; 
+    background: $main-blue; 
+    color: white; 
+    font-size: 1rem;
+    width: 100%; 
+    // text-align: center;
+
+    .foot {
+        padding-left: 3em; 
+
+        a {
+            &:hover {
+                color: white; 
+                text-decoration: underline; 
+            }
+        }
+    }
+
+    p {
+        margin: 0; 
+        height: 100%; 
+        padding-top: 0.3rem; 
+    }
+    
+    @media screen and (max-width: 550px) {
+        font-size: 0.7rem; 
+    }
+
+      @media screen and (max-height: 400px) {
+        font-size: 0.5rem; 
+        padding: 0.3rem;  
+    }
+}

@@ -13,9 +13,49 @@
         display: flex; 
         flex-direction: row;
         padding: 3em; 
+        padding-top: 1em; 
 
         .left-col {
-            width: 33.33%;
+            // padding-top: 5em; 
+            width: 5%; 
+            display: flex; 
+            flex-direction: column; 
+
+            img {
+                height: 40px; 
+            }
+
+            .icon {
+                height: 160px; 
+            }
+        }
+
+        .mid-col {
+            // padding-top: 5em; 
+            width: 25%;
+            // margin-right: 13.33%; 
+            display: flex; 
+            flex-direction: column; 
+            // justify-content: space-between; 
+
+            &__group {
+                display: flex; 
+                flex-direction: row;
+                // padding-bottom: 10em; 
+                height: 160px; 
+
+                img {
+                    height: 40px; 
+                }
+
+                p {
+                    font-family: $lato; 
+                    font-weight: 300; 
+                    line-height: 1.5em; 
+                    padding-left: 5%; 
+                    font-size: 1.2em; 
+                }
+            }
         }
 
         .right-col {

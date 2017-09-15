@@ -791,12 +791,67 @@ button:focus {
         -webkit-box-direction: normal; 
             -ms-flex-direction: row; 
                 flex-direction: row;
-        padding: 3em;
+        padding: 3em; 
+        padding-top: 1em;
     }
 
 .contact__main .left-col {
-            width: 33.33%;
+            // padding-top: 5em; 
+            width: 5%; 
+            display: -webkit-box; 
+            display: -ms-flexbox; 
+            display: flex; 
+            -webkit-box-orient: vertical; 
+            -webkit-box-direction: normal; 
+                -ms-flex-direction: column; 
+                    flex-direction: column;
         }
+
+.contact__main .left-col img {
+                height: 40px; 
+            }
+
+.contact__main .left-col .icon {
+                height: 160px; 
+            }
+
+.contact__main .mid-col {
+            // padding-top: 5em; 
+            width: 25%;
+            // margin-right: 13.33%; 
+            display: -webkit-box; 
+            display: -ms-flexbox; 
+            display: flex; 
+            -webkit-box-orient: vertical; 
+            -webkit-box-direction: normal; 
+                -ms-flex-direction: column; 
+                    flex-direction: column; 
+            // justify-content: space-between;
+        }
+
+.contact__main .mid-col__group {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex; 
+                -webkit-box-orient: horizontal; 
+                -webkit-box-direction: normal; 
+                    -ms-flex-direction: row; 
+                        flex-direction: row;
+                // padding-bottom: 10em; 
+                height: 160px;
+            }
+
+.contact__main .mid-col__group img {
+                    height: 40px; 
+                }
+
+.contact__main .mid-col__group p {
+                    font-family: 'Lato', sans-serif; 
+                    font-weight: 300; 
+                    line-height: 1.5em; 
+                    padding-left: 5%; 
+                    font-size: 1.2em; 
+                }
 
 .contact__main .right-col {
             width: 66.67%;
@@ -890,6 +945,50 @@ button:focus {
                         background-color: black; 
                         margin-left: 10px; 
                     }
+
+footer {
+    // position: relative; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // padding-top: 0.5rem;
+    height: 5vh; 
+    background: #005277; 
+    color: white; 
+    font-size: 1rem;
+    width: 100%; 
+    // text-align: center;
+}
+
+footer .foot {
+        padding-left: 3em;
+    }
+
+footer .foot a:hover {
+                color: white; 
+                text-decoration: underline; 
+            }
+
+footer p {
+        margin: 0; 
+        height: 100%; 
+        padding-top: 0.3rem; 
+    }
+
+@media screen and (max-width: 550px) {
+
+footer {
+        font-size: 0.7rem
+} 
+    }
+
+@media screen and (max-height: 400px) {
+
+footer {
+        font-size: 0.5rem; 
+        padding: 0.3rem
+}  
+    }
 
 /*BASE*/
 
