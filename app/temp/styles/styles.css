@@ -506,7 +506,7 @@ button:focus {
 .hero__content--tagline {
             text-align: center; 
             margin: 0 auto; 
-            
+            width: 70%; 
         }
 
 .hero h1 {
@@ -519,7 +519,7 @@ button:focus {
     color: black; 
     margin-top:0;
     margin-bottom: 5%;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(243, 237, 237, 0.6);
 }
 
 @media screen and (max-width: 767px) {
@@ -532,13 +532,13 @@ button:focus {
 
 .hero h3 {
         font-family: 'Lato', sans-serif; 
-        color: white; 
+        color: black; 
+        font-weight: 700; 
         margin: 5% 0 auto auto; 
         letter-spacing: 2px;
         text-align: center;  
         margin-bottom: 20px; 
-        background-color: rgba(0, 0, 0, 0.5);
-        // width: 90%;
+        background-color: rgba(243, 237, 237, 0.65);
     }
 
 @media screen and (max-width: 767px) {
@@ -590,23 +590,44 @@ button:focus {
 
 .header {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0å);
+    background-color: rgba(255, 255, 255, 0.8);
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    height: 50px; 
+    height: 55px; 
     z-index: 10; 
     padding: 0 3em;
 }
 
 .header h4 {
-    float: right;
-    display: block;
-    color: #333;
-    text-align: center;
-    padding: 14px 16px;
-    font-family: 'Oswald', sans-serif; 
-    text-transform: uppercase; 
+        float: right;
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: 'Oswald', sans-serif; 
+        text-transform: uppercase; 
+    }
+
+.header img {
+            padding-top: 5px; 
+            padding-left: 3em; 
+        }
+
+.nav-up { //when you scroll down
+    transition-timing-function: ease-in; 
+    -webkit-transition: 0.3s; 
+    transition: 0.3s; 
+    -webkit-transform: translateY(-130%); 
+            transform: translateY(-130%); 
+}
+
+.nav-down { //when you scroll up
+    transition-timing-function: ease-out; 
+    -webkit-transition: 0.5s; 
+    transition: 0.5s; 
+    -webkit-transform: translateY(0); 
+            transform: translateY(0);  
 }
 
 .overview {
@@ -725,8 +746,10 @@ button:focus {
     }
 
 .call__info {
-        display: -webkit-box;
-        display: -ms-flexbox;
+        margin: 0 auto; 
+        width: 65%; 
+        display: -webkit-box; 
+        display: -ms-flexbox; 
         display: flex; 
         -webkit-box-orient: horizontal; 
         -webkit-box-direction: normal; 
@@ -746,6 +769,7 @@ button:focus {
 
 .call__info h3 {
             font-size: 1.5em; 
+            line-height: 1.3em; 
         }
 
 .contact {
@@ -753,6 +777,11 @@ button:focus {
     color: white;
 
 }
+
+.contact input {
+        padding: 0.5em; 
+        color: #333; 
+    }
 
 .contact__main {
         display: -webkit-box;
@@ -786,6 +815,7 @@ button:focus {
             padding-top: 30px;
             position: relative;
             color: black; 
+            width: 96%; 
         }
 
 .contact__main .right-col__form {
@@ -806,13 +836,21 @@ button:focus {
                     display: inline-block; 
                     padding: 0; 
                     width: 30%; 
-                    margin-right: 3%; 
+                    margin-right: 3%;
+                }
+
+.contact__main .right-col__form .input-row input {
+                    height:40px; 
                 }
 
 .contact__main .right-col__form .textarea-row {
-                width: 100%; 
-                padding: 3em 0; 
+                width: 96%; 
+                padding: 3em 0;
             }
+
+.contact__main .right-col__form .textarea-row textarea {
+                    line-height: 1.3em; 
+                }
 
 .contact__main .right-col__form .form-item {
                 display: -webkit-box;
@@ -821,8 +859,37 @@ button:focus {
                 -webkit-box-orient: vertical; 
                 -webkit-box-direction: normal; 
                     -ms-flex-direction: column; 
-                        flex-direction: column; 
+                        flex-direction: column;
             }
+
+.contact__main .right-col__form .form-item label {
+                    margin: 0; 
+                    font-weight: 400; 
+                    letter-spacing: 1px;
+                }
+
+.contact__main .right-col__form .submit-row .submit-box {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex; 
+                    -webkit-box-orient: horizontal; 
+                    -webkit-box-direction: normal; 
+                        -ms-flex-direction: row; 
+                            flex-direction: row;  
+                }
+
+.contact__main .right-col__form .submit-row .form-item {
+                        width: 200px;
+                    }
+
+.contact__main .right-col__form .submit-row .form-item input {
+                            height: 42px; 
+                        }
+
+.contact__main .right-col__form .submit-row button {
+                        background-color: black; 
+                        margin-left: 10px; 
+                    }
 
 /*BASE*/
 
@@ -845,6 +912,11 @@ a:hover:hover {
 .section-header {
     font-family: 'Oswald', sans-serif; 
     text-transform: uppercase;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    font-family: 'Lato', sans-serif; 
 } 
 
 

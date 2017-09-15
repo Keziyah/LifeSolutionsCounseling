@@ -2,21 +2,39 @@
 
 .header {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0å);
+    background-color: rgba(255, 255, 255, 0.8);
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    height: 50px; 
+    height: 55px; 
     z-index: 10; 
     padding: 0 3em; 
 
-    h4 {
-    float: right;
-    display: block;
-    color: #333;
-    text-align: center;
-    padding: 14px 16px;
-    font-family: $oswald; 
-    text-transform: uppercase; 
+        h4 {
+        float: right;
+        display: block;
+        color: #333;
+        text-align: center;
+        padding: 14px 16px;
+        font-family: $oswald; 
+        text-transform: uppercase; 
+    }
+
+        img {
+            padding-top: 5px; 
+            padding-left: 3em; 
+        }
 }
+
+.nav-up { //when you scroll down
+    transition-timing-function: ease-in; 
+    transition: 0.3s; 
+    transform: translateY(-130%); 
+}
+
+
+.nav-down { //when you scroll up
+    transition-timing-function: ease-out; 
+    transition: 0.5s; 
+    transform: translateY(0);  
 }

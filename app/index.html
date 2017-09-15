@@ -6,19 +6,21 @@
     <title></title>
     <meta name="keywords" content="Counseling, therapy, Kissimmee, counselor, mental health, substance abuse, EAP, children counseling">
     <meta name="description" content="Christine Lewis is a mental health counselor with over 10 years of experience in Kissimmee, FL.">
+    
     <!-- link to the postcss stylesheet, not the original one -->
     <link href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato:400,700|Oswald:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato:400,700|Oswald:300,400,600" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
 </head>
 
 <body>
     <div class="main">
-          <div class="header">
-            <h4><a href="#about">About</a></h4>
-            <h4><a href="#contact">Contact</a></h4>
-            <h4><a href="#services">Services</a></h4>
-          </div>  
+            <header class="header nav-down">
+                <img src="/assets/images/lsclogo.png" alt="life solutions counseling logo">
+                <h4><a href="#about">About</a></h4>
+                <h4><a href="#contact">Contact</a></h4>
+                <h4><a href="#services">Services</a></h4>
+            </header>
             <div class="hero">
                     <div class="hero__content container">
                         <div class="row">
@@ -74,7 +76,7 @@
                         <div class="about__words col-md-8">
                             <h1 class="section-header">About</h1>
                             <p>
-                                Christine Lewis is a licensed mental health counselor with over 10 years of experience.<br /> 
+                                Life Solutions Counseling is owned by Christine Lewis, a licensed mental health counselor with over 10 years of experience.<br /> 
                                 Neutra crucifix butcher chartreuse blue bottle plaid. Jean shorts listicle small batch paleo, organic slow-carb VHS marfa umami roof party chartreuse. Waistcoat hammock offal blog viral echo park. Wayfarers vinyl fashion axe, kickstarter gastropub.
                             </p>
                             <p>
@@ -217,7 +219,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-input col-md-4">
+                                            <div class="form-input col-md-4" id="subject-div">
                                                 <div class="form-item">
                                                     <label for="subject">Subject</label>
                                                     <input type="text" id="subject" name="subject" placeholder="Subject">
@@ -227,18 +229,21 @@
                                         
                                         <div class="textarea-row form-item">
                                             <label for="message">Message</label>
-                                            <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                                            <textarea id="message" name="message" placeholder="Type your message here, and feel free to leave a phone number, and the best time to contact you." style="height:150px"></textarea>
                                         </div>
 
                                         <div class="submit-row">
                                             <div class="form-item">
                                                 <label for="robot">Are you a robot?</label>
-                                                <input type="text" id="robot" name="robot" placeholder="What is 3 + 2?">
+                                                   <div class="submit-box">
+                                                        <input type="text" id="robot" name="robot" placeholder="What is 3 + 2?">
+                                                        <button type="submit">Submit</button>
+                                                    </div>
                                             </div>
 
-                                            <div class="btn-submit">
+                                            <!-- <div class="btn-submit">
                                                 <button type="submit">Submit</button>
-                                            </div>
+                                            </div> -->
 
                                         </div>
                                     </form> 

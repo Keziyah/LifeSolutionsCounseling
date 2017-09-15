@@ -1,8 +1,41 @@
-//Source: https://codepen.io/hubpork/pen/xriIz 
-
 $( document ).ready( function() {
-  
-	//Google Maps JS
+
+//********** Header scroll stuff ****************//
+var didScroll;
+var scrollY; 
+var lastY = 0; 
+
+$(window).scroll(function(event){
+	didScroll = true;
+	scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+	if(scrollY === 0) {
+		$('header').removeClass('nav-up').addClass('nav-down');
+	}
+	else if(scrollY - lastY > 0 && scrollY > 70) {
+		$('header').removeClass('nav-down').addClass('nav-up');
+	} else if (scrollY - lastY < 0 && scrollY > 70) {
+		$('header').removeClass('nav-up').addClass('nav-down');
+	}
+
+	lastY = scrollY; 
+}
+    
+	
+    //********************************************** */
+    //********************************************** */
+    //********************************************** */
+
+	//Google Maps JS   https://codepen.io/hubpork/pen/xriIz 
 	//Set Map
 	function initialize() {
 			var myLatlng = new google.maps.LatLng(28.306171,-81.439076);
@@ -12,7 +45,7 @@ $( document ).ready( function() {
 				center: myLatlng,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			}
-
+//
 		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 		//Callout Content
 		var contentString = 

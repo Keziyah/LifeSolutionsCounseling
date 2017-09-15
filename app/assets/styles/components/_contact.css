@@ -4,6 +4,11 @@
     background: $main-blue;
     color: white; 
 
+    input {
+        padding: 0.5em; 
+        color: #333; 
+    }
+
     &__main {
         display: flex; 
         flex-direction: row;
@@ -27,6 +32,7 @@
             padding-top: 30px;
             position: relative;
             color: black; 
+            width: 96%; 
         }
 
         &__form {
@@ -43,22 +49,52 @@
                     display: inline-block; 
                     padding: 0; 
                     width: 30%; 
-                    margin-right: 3%; 
+                    margin-right: 3%;
+                }
+
+                input {
+                    height:40px; 
                 }
             }
 
             .textarea-row {
-                width: 100%; 
+                width: 96%; 
                 padding: 3em 0; 
+
+                textarea {
+                    line-height: 1.3em; 
+                }
             }
 
             .form-item {
                 display: flex; 
                 flex-direction: column; 
+
+                label {
+                    margin: 0; 
+                    font-weight: 400; 
+                    letter-spacing: 1px;
+                }
             }
 
             .submit-row {
                 
+                .submit-box {
+                    display: flex; 
+                    flex-direction: row;  
+                }
+                    .form-item {
+                        width: 200px; 
+                        
+                        input {
+                            height: 42px; 
+                        }
+                    }
+
+                    button {
+                        background-color: black; 
+                        margin-left: 10px; 
+                    }
             }
         }
 

@@ -18,3 +18,8 @@ a {
     font-family: $oswald; 
     text-transform: uppercase;
 }
+
+textarea:focus, input:focus{
+    outline: none;
+    font-family: $lato; 
+}
