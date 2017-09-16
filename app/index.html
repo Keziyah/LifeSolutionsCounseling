@@ -15,16 +15,16 @@
 
 <body>
     <div class="main">
-            <header class="header nav-down">
+            <!-- <header class="header nav-down">
                 <img src="/assets/images/lsclogo.png" alt="life solutions counseling logo">
                 <h4><a href="#about">About</a></h4>
                 <h4><a href="#contact">Contact</a></h4>
                 <h4><a href="#services">Services</a></h4>
-            </header>
+            </header> -->
             <div class="hero">
                     <div class="hero__content container">
                         <div class="row">
-                            <div class="col-xs-12 col-lg-6 hero__content--story">
+                            <div class="hero__content--story">
                                     <h1>It's never too late <br /> to rewrite your <br />story. &nbsp; <button id="schedule">Schedule an appointment today</button></h1>
                                     <!-- <button>Schedule an appointment today</button> -->
                             </div>
@@ -42,49 +42,49 @@
             </div>
             <div class="content">
                 <div class="overview container">
-                    <div class="overview__item col-md-4 col-xs-12">
+                    <div class="overview__item ">
                         <div class="overview__item--img"><img src="/assets/images/goals.png" alt="goals icon"/></div>
                         <div class="overview__item--header"><h3>Reach Your Goals</h3></div>
                         <div class="overview__item--p">
-                            <p>Whether it’s losing weight<br/> 
-                            or improving your self<br/> 
-                            esteem, we can help you<br/> 
+                            <p>Whether it’s losing weight
+                            or improving your self
+                            esteem, we can help you
                             achieve what you want in
                             life.</p>
                         </div>
                     </div>
 
-                    <div class="overview__item col-md-4 col-xs-12">
+                    <div class="overview__item ">
                         <div class="overview__item--img"><img src="/assets/images/stress.png" alt="stress icon"/></div>
                         <div class="overview__item--header"><h3>Cope With Stress</h3></div>
                         <div class="overview__item--p">
-                            <p>Learn strategies to help<br/>  you handle stress, anxiety,<br/>  depression,  or whatever life<br/>  throws at you.</p>
+                            <p>Learn strategies to help  you handle stress, anxiety, depression,  or whatever life  throws at you.</p>
                         </div>
                     </div>
 
-                    <div class="overview__item col-md-4 col-xs-12">
+                    <div class="overview__item ">
                         <div class="overview__item--img"><img src="/assets/images/problem.png" alt="problem icon"/></div>
                         <div class="overview__item--header"><h3>Problem Solving</h3></div>
                         <div class="overview__item--p">
-                            <p>Counseling can empower you<br/>  with tools to help you overcome<br/>  challenges and solve problems.</p>
+                            <p>Counseling can empower you with tools to help you overcome  challenges and solve problems.</p>
                         </div>
                     </div>
                 </div> <!-- closes overview -->
 
                 <div class="about" id="about">
                     <div class="container">
-                        <div class="about__words col-md-8">
+                        <div class="about__words ">
                             <h1 class="section-header">About</h1>
                             <p>
                                 Life Solutions Counseling is owned by Christine Lewis, a licensed mental health counselor with over 10 years of experience.<br /> 
-                                Neutra crucifix butcher chartreuse blue bottle plaid. Jean shorts listicle small batch paleo, organic slow-carb VHS marfa umami roof party chartreuse. Waistcoat hammock offal blog viral echo park. Wayfarers vinyl fashion axe, kickstarter gastropub.
+                                Neutra crucifix butcher chartreuse blue bottle plaid. Jean shorts listicle xsall batch paleo, organic slow-carb VHS marfa umami roof party chartreuse. Waistcoat hammock offal blog viral echo park. Wayfarers vinyl fashion axe, kickstarter gastropub.
                             </p>
                             <p>
                                 <strong>Schedule an appointment with Christine today.</strong> 
                             </p>
                         </div>
-                        <div class="about__pic col-md-4">
-                            <div>
+                        <div class="about__pic ">
+                            <div class="pic-div">
                                 <img src="/assets/images/christine.png" alt="Christine Lewis">
                             </div>
                             <div>
@@ -165,20 +165,20 @@
                             <h1>Call Christine today for a free consultation</h1>
 
                             <div class="call__info">
-                                <div class="call__info--phone">
-                                    <div>
+                                <div class="call__info--phone icon-div">
+                                    <div class="icon-div__img">
                                         <img src="/assets/images/phone.png" alt="phone icon">
                                     </div>
                                     <h3>
                                         407-724-9682
                                     </h3>
                                 </div>
-                                <div class="call__info--email">
-                                    <div>
+                                <div class="call__info--email icon-div">
+                                    <div class="icon-div__img">
                                         <img src="/assets/images/email.png" alt="email icon">
                                     </div>
                                     <h3>
-                                        christine@<br/>life-solutions-counseling.com
+                                        christine[at]<br/>life-solutions-counseling.com
                                     </h3>
                                 </div>
                             </div><!-- closes call__info -->
@@ -227,7 +227,7 @@
                                     <!-- <img src="/assets/images/dollar.png" alt="dollar icon"> -->
                                     <p>
                                         We accept: <br/>
-                                        Self pay | Medicaid |<br/>
+                                        Self pay | Medicaid |
                                         CMS
                                     </p>
                                 </div>
@@ -298,6 +298,16 @@
 
     <script async defer
     src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCapYDuwodpe-h2POaa0IrLH660rtzmn7Y&callback">
+    </script>
+
+<script type="text/javascript">
+    
+        jQuery(window).resize(function () {
+          var width = jQuery(window).width();
+          var height = jQuery(window).height();
+          console.log(width);
+        //   console.log(height);
+        })
     </script>
 </body>
 

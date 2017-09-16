@@ -11,12 +11,20 @@
         font-family: $lato; 
         font-size: 3em; 
         padding-top: 1em; 
+
+        @media screen and (max-width: 400px) {
+            font-size: 2.5em; 
+        }
     }
 
     &__icons {
         display: flex; 
         flex-direction: column; 
-        padding: 4em 3em;  
+        padding: 4em 3em; 
+        
+        @media screen and (max-width: 550px) {
+            padding: 1em 3em; 
+        }
         
         &--row {
             display: flex; 
@@ -25,14 +33,35 @@
             text-align: center; 
             font-family: $lato; 
             padding: 2em; 
+
             
+            @media screen and (max-width: 550px) {
+                flex-wrap: wrap;
+                padding: 0 2em;  
+            }
         }
 
         &--single {
             width: 33.33%; 
+
+                @media screen and (max-width: 600px) {
+                    h3 {
+                        font-size: 1em;
+                    } 
+                    
+                    
+                }
+            @media screen and (max-width: 550px) {
+                width: 100%; 
+                font-size: 1.8em; 
+                padding-bottom: 2em; 
+            }
         }
     }
 }
+
+/*individual icons for the services*/
+
 
 .call {
     text-align: center; 
@@ -42,26 +71,68 @@
         color: $main-brown; 
         text-transform: uppercase; 
         font-size: 3em; 
+
+        @media screen and (max-width: 700px) {
+            font-size: 2em; 
+        }
     }
     
     &__info {
         margin: 0 auto; 
-        width: 65%; 
+        width: 100%; 
         display: flex; 
         flex-direction: row;
-        justify-content: space-around;
+        // justify-content: space-around;
         text-align: center; 
         padding: 4em;  
         font-family: $lato; 
 
-        img {
-            // height: 50px; 
-            // width: 50px; 
+        @media screen and (max-width: 700px) {
+            flex-wrap: wrap; 
+        }
+
+        .icon-div {
+                display: flex; 
+                flex-direction: row; 
+                width: 70%; 
+                margin: 0 auto; 
+                padding-bottom: 2em; 
+
+                &__img {
+                    width: 120px; 
+                }
+
+                @media screen and (max-width: 700px) {
+                    flex-direction: column; 
+
+                    &__img {
+                        width: 100%; 
+                    }
+                }
+        }
+
+        &--email { 
+
+            h3 {
+                margin-top: 0; 
+
+                @media screen and (max-width: 700px) {
+                    margin-top: 1em; 
+                }
+            }
         }
 
         h3 {
             font-size: 1.5em; 
             line-height: 1.3em; 
+
+            @media screen and (max-width: 1000px) {
+                font-size: 1.2em; 
+            }
+
+            @media screen and (max-width: 709px) {
+                width: 100%; 
+            }
         }
     }
 }

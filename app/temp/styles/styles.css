@@ -498,16 +498,52 @@ button:focus {
     background-size: cover;
 }
 
+.hero .container {
+        padding: 3em; 
+    }
+
 .hero__content {
-        padding-top: 7%; 
+        // padding-top: 7%; 
         margin: 0 auto;
     }
+
+.hero__content--story {
+            width: 50%;
+        }
+
+@media screen and (max-width: 1200px) {
+
+.hero__content--story {
+                width: 60%
+        }  
+            }
+
+@media screen and (max-width: 1000px) {
+
+.hero__content--story {
+                width: 70%
+        }  
+            }
+
+@media screen and (max-width: 640px) {
+
+.hero__content--story {
+                width: 100%
+        }  
+            }
 
 .hero__content--tagline {
             text-align: center; 
             margin: 0 auto; 
-            width: 70%; 
+            width: 70%;
         }
+
+@media screen and (max-width: 600px) {
+
+.hero__content--tagline {
+                width: 100%
+        } 
+            }
 
 .hero h1 {
     font-family: 'Oswald', sans-serif; 
@@ -522,11 +558,38 @@ button:focus {
     background-color: rgba(243, 237, 237, 0.6);
 }
 
+@media screen and (max-width: 1200px) {
+
+.hero h1 {
+        font-size: 3.5em
+} 
+    }
+
+@media screen and (max-width: 1000px) {
+
+.hero h1 {
+        font-size: 3em
+} 
+    }
+
 @media screen and (max-width: 767px) {
 
 .hero h1 {
-        font-size: 2em; 
-        width: 100%
+        font-size: 2.5em
+} 
+    }
+
+@media screen and (max-width: 560px) {
+
+.hero h1 {
+        background: none
+} 
+    }
+
+@media screen and (max-width: 420px) {
+
+.hero h1 {
+        font-size: 2em
 } 
     }
 
@@ -557,9 +620,23 @@ button:focus {
 @media screen and (max-width: 767px) {
 
 .hero #schedule {
+            font-size: 1.3rem
+    } 
+        }
+
+@media screen and (max-width: 640px) {
+
+.hero #schedule {
+            font-size: 1rem
+    } 
+        }
+
+@media screen and (max-width: 420px) {
+
+.hero #schedule {
             position: initial; 
             display: block
-    } 
+    }  
         }
 
 .help {
@@ -585,8 +662,22 @@ button:focus {
         text-align: center; 
         color: white; 
         font-size: 4.5em;  
-        font-family: 'Lato', sans-serif; 
+        font-family: 'Lato', sans-serif;
     }
+
+@media screen and (max-width: 500px) {
+
+.help h1 {
+            font-size: 3em
+    } 
+        }
+
+@media screen and (max-width: 340px) {
+
+.help h1 {
+            font-size: 2.5em
+    } 
+        }
 
 .header {
     overflow: hidden;
@@ -638,24 +729,69 @@ button:focus {
     -webkit-box-direction: normal; 
         -ms-flex-direction: row; 
             flex-direction: row; 
+    -webkit-box-pack: justify; 
+        -ms-flex-pack: justify; 
+            justify-content: space-between; 
     padding-top: 5em;  
     padding-bottom: 5em;
 
 }
 
+@media screen and (max-width: 630px) {
+
+.overview {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap
+
+} 
+    }
+
 .overview__item {
         text-align: center;
     }
 
-.overview__item--header {
-            font-family: 'Lato', sans-serif; 
-            font-size: 3em; 
-            color: #995300; 
+@media screen and (max-width: 630px) {
+
+.overview__item {
+            padding-bottom: 5em
+    } 
         }
 
-.overview__item--p {
-            font-size: 1.5em; 
+.overview__item--header {
+            font-family: 'Lato', sans-serif; 
+            color: #995300;
         }
+
+.overview__item--header h3 {
+                font-size: 1.8em;
+            }
+
+@media screen and (max-width: 1000px) {
+
+.overview__item--header h3 {
+                        font-size: 1.5em
+            } 
+                    }
+
+.overview__item--p {
+            font-size: 1.4em; 
+            width: 85%; 
+            margin: 0 auto;
+        }
+
+@media screen and (max-width: 1000px) {
+
+.overview__item--p {
+                font-size: 1.2em
+        } 
+            }
+
+@media screen and (max-width: 630px) {
+
+.overview__item--p {
+                width: 70%
+        } 
+            }
 
 .about {
 
@@ -675,8 +811,18 @@ button:focus {
         -webkit-box-orient: horizontal; 
         -webkit-box-direction: normal; 
             -ms-flex-direction: row; 
-                flex-direction: row; 
+                flex-direction: row;
+        padding: 0 3em;
+        /*Move from two columns to one once it gets this small*/
     }
+
+@media screen and (max-width: 600px) {
+
+.about .container {
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap
+    } 
+        }
 
 .about p {
         font-family: 'Lato', sans-serif; 
@@ -684,12 +830,86 @@ button:focus {
         line-height: 1.7em; 
     }
 
+.about__words {
+        width: 70%;
+
+    }
+
 .about__words p {
             width: 90%; 
         }
 
+@media screen and (max-width: 1000px) {
+            .about__words p {
+                font-size: 1.3em; 
+            }
+        }
+
+@media screen and (max-width: 800px) {
+            .about__words p {
+                font-size: 1.2em; 
+            }
+        }
+
+@media screen and (max-width: 640px) {
+            .about__words p {
+                font-size: 1.1em; 
+            }
+        }
+
+@media screen and (max-width: 600px) {
+
+.about__words {
+            width: 100%
+
+    } 
+            .about__words p {
+                font-size: 1.2em; 
+                font-weight: 300; 
+                width: 100%; 
+            }
+        }
+
 .about__pic p {
             text-align: center; 
+        }
+
+.about__pic img {
+            max-width: 260px; 
+            width: 100%; 
+        }
+
+@media screen and (max-width: 1000px) {
+            .about__pic img {
+                padding-top: 2em; 
+                max-width: 230px;
+            }
+        }
+
+@media screen and (max-width: 640px) {
+            .about__pic p {
+                font-size: 1.2em; 
+            }
+
+            .about__pic img {
+                padding-top: 4em; 
+            }
+        }
+
+@media screen and (max-width: 600px) {
+
+.about__pic {
+            width: 100%
+    } 
+
+            .about__pic img {
+                padding-top: 2em; 
+            }
+
+            .about__pic .pic-div {
+                width: 230px; 
+                margin: 0 auto; 
+            }
         }
 
 .services .section-header {
@@ -700,8 +920,15 @@ button:focus {
         text-align: center; 
         font-family: 'Lato', sans-serif; 
         font-size: 3em; 
-        padding-top: 1em; 
+        padding-top: 1em;
     }
+
+@media screen and (max-width: 400px) {
+
+.services__we-offer {
+            font-size: 2.5em
+    } 
+        }
 
 .services__icons {
         display: -webkit-box;
@@ -713,6 +940,13 @@ button:focus {
                 flex-direction: column; 
         padding: 4em 3em;
     }
+
+@media screen and (max-width: 550px) {
+
+.services__icons {
+            padding: 1em 3em
+    } 
+        }
 
 .services__icons--row {
             display: -webkit-box;
@@ -726,13 +960,40 @@ button:focus {
                 justify-content: space-around;
             text-align: center; 
             font-family: 'Lato', sans-serif; 
-            padding: 2em; 
-            
+            padding: 2em;
         }
 
+@media screen and (max-width: 550px) {
+
+.services__icons--row {
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                padding: 0 2em
+        }  
+            }
+
 .services__icons--single {
-            width: 33.33%; 
+            width: 33.33%;
         }
+
+@media screen and (max-width: 600px) {
+                    .services__icons--single h3 {
+                        font-size: 1em;
+                    } 
+                    
+                    
+                }
+
+@media screen and (max-width: 550px) {
+
+.services__icons--single {
+                width: 100%; 
+                font-size: 1.8em; 
+                padding-bottom: 2em
+        } 
+            }
+
+/*individual icons for the services*/
 
 .call {
     text-align: center; 
@@ -742,12 +1003,19 @@ button:focus {
 .call h1 {
         color: #995300; 
         text-transform: uppercase; 
-        font-size: 3em; 
+        font-size: 3em;
     }
+
+@media screen and (max-width: 700px) {
+
+.call h1 {
+            font-size: 2em
+    } 
+        }
 
 .call__info {
         margin: 0 auto; 
-        width: 65%; 
+        width: 100%; 
         display: -webkit-box; 
         display: -ms-flexbox; 
         display: flex; 
@@ -755,22 +1023,80 @@ button:focus {
         -webkit-box-direction: normal; 
             -ms-flex-direction: row; 
                 flex-direction: row;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+        // justify-content: space-around;
         text-align: center; 
         padding: 4em;  
         font-family: 'Lato', sans-serif;
     }
 
-.call__info img {
-            // height: 50px; 
-            // width: 50px; 
+@media screen and (max-width: 700px) {
+
+.call__info {
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap
+    } 
         }
+
+.call__info .icon-div {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex; 
+                -webkit-box-orient: horizontal; 
+                -webkit-box-direction: normal; 
+                    -ms-flex-direction: row; 
+                        flex-direction: row; 
+                width: 70%; 
+                margin: 0 auto; 
+                padding-bottom: 2em;
+        }
+
+.call__info .icon-div__img {
+                    width: 120px; 
+                }
+
+@media screen and (max-width: 700px) {
+
+.call__info .icon-div {
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column
+        } 
+
+                    .call__info .icon-div__img {
+                        width: 100%; 
+                    }
+                }
+
+.call__info--email h3 {
+                margin-top: 0;
+            }
+
+@media screen and (max-width: 700px) {
+
+.call__info--email h3 {
+                    margin-top: 1em
+            } 
+                }
 
 .call__info h3 {
             font-size: 1.5em; 
-            line-height: 1.3em; 
+            line-height: 1.3em;
         }
+
+@media screen and (max-width: 1000px) {
+
+.call__info h3 {
+                font-size: 1.2em
+        } 
+            }
+
+@media screen and (max-width: 709px) {
+
+.call__info h3 {
+                width: 100%
+        } 
+            }
 
 .contact {
     background: #005277;
@@ -795,6 +1121,14 @@ button:focus {
         padding-top: 1em;
     }
 
+@media screen and (max-width: 700px) {
+
+.contact__main {
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap
+    } 
+        }
+
 .contact__main .left-col {
             // padding-top: 5em; 
             width: 5%; 
@@ -807,13 +1141,27 @@ button:focus {
                     flex-direction: column;
         }
 
+@media screen and (max-width: 700px) {
+
+.contact__main .left-col {
+                display: none
+        }  
+            }
+
 .contact__main .left-col img {
                 height: 40px; 
             }
 
 .contact__main .left-col .icon {
-                height: 160px; 
+                height: 160px;
             }
+
+@media screen and (max-width: 750px) {
+
+.contact__main .left-col .icon {
+                    height: 100px
+            } 
+                }
 
 .contact__main .mid-col {
             // padding-top: 5em; 
@@ -829,6 +1177,21 @@ button:focus {
             // justify-content: space-between;
         }
 
+@media screen and (max-width: 700px) {
+
+.contact__main .mid-col {
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;  
+                width: 100%; 
+                margin: 0 auto
+        } 
+            }
+
 .contact__main .mid-col__group {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -841,6 +1204,13 @@ button:focus {
                 height: 160px;
             }
 
+@media screen and (max-width: 750px) {
+
+.contact__main .mid-col__group {
+                    height: 100px
+            } 
+                }
+
 .contact__main .mid-col__group img {
                     height: 40px; 
                 }
@@ -850,14 +1220,47 @@ button:focus {
                     font-weight: 300; 
                     line-height: 1.5em; 
                     padding-left: 5%; 
-                    font-size: 1.2em; 
+                    font-size: 1.2em;
                 }
+
+@media screen and (max-width: 1000px) {
+
+.contact__main .mid-col__group p {
+                        padding-left: 10%
+                } 
+                    }
+
+@media screen and (max-width: 750px) {
+
+.contact__main .mid-col__group p {
+                        font-size: 1em; 
+                        width: 130px
+                } 
+                    }
 
 .contact__main .right-col {
             width: 66.67%;
 
            
         }
+
+@media screen and (max-width: 1000px) {
+
+.contact__main .right-col {
+                padding-left: 3%
+
+           
+        } 
+            }
+
+@media screen and (max-width: 700px) {
+
+.contact__main .right-col {
+                width: 100%
+
+           
+        } 
+            }
 
 .contact__main .right-col #map_container {
             position: relative;
@@ -887,11 +1290,37 @@ button:focus {
                 padding: 2em 0;
             }
 
+@media screen and (max-width: 750px) {
+
+.contact__main .right-col__form .input-row {
+                    padding: 0
+            } 
+                }
+
 .contact__main .right-col__form .input-row .form-input {
                     display: inline-block; 
                     padding: 0; 
                     width: 30%; 
                     margin-right: 3%;
+                }
+
+@media screen and (max-width: 1000px) {
+
+.contact__main .right-col__form .input-row .form-input {
+                        margin-right: 2%
+                } 
+                    }
+
+@media screen and (max-width: 750px) {
+
+.contact__main .right-col__form .input-row .form-input {
+                        width: 95%; 
+                        padding-top: 1em
+                } 
+                    }
+
+.contact__main .right-col__form .input-row #subject-div {
+                    margin-right: 0; 
                 }
 
 .contact__main .right-col__form .input-row input {
@@ -902,6 +1331,13 @@ button:focus {
                 width: 96%; 
                 padding: 3em 0;
             }
+
+@media screen and (max-width: 750px) {
+
+.contact__main .right-col__form .textarea-row {
+                    padding: 1em 0
+            } 
+                }
 
 .contact__main .right-col__form .textarea-row textarea {
                     line-height: 1.3em; 
@@ -930,8 +1366,18 @@ button:focus {
                     -webkit-box-orient: horizontal; 
                     -webkit-box-direction: normal; 
                         -ms-flex-direction: row; 
-                            flex-direction: row;  
+                            flex-direction: row;
                 }
+
+@media screen and (max-width: 390px) {
+
+.contact__main .right-col__form .submit-row .submit-box {
+                        -webkit-box-orient: vertical;
+                        -webkit-box-direction: normal;
+                            -ms-flex-direction: column;
+                                flex-direction: column
+                } 
+                    }
 
 .contact__main .right-col__form .submit-row .form-item {
                         width: 200px;
@@ -943,8 +1389,15 @@ button:focus {
 
 .contact__main .right-col__form .submit-row button {
                         background-color: black; 
-                        margin-left: 10px; 
+                        margin-left: 10px;
                     }
+
+@media screen and (max-width: 390px) {
+
+.contact__main .right-col__form .submit-row button {
+                            margin-left: 0
+                    }  
+                        }
 
 footer {
     // position: relative; 
