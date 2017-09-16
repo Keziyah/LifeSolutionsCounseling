@@ -1,7 +1,16 @@
 @import '../base/_variables';
 
-/*LINKS*/
 
+.site-wrapper {
+    overflow-x: hidden; 
+}
+
+/*For fade in on scroll - hide the sections first*/
+.hideme {
+    opacity:0;
+}
+
+/*LINKS*/
 a {
     color: inherit; 
     &:hover {
@@ -12,6 +21,8 @@ a {
             color: $main-blue;
         }
     }
+
+    cursor: pointer;
 }
 
 .section-header {

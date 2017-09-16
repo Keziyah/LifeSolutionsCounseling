@@ -17,6 +17,7 @@
 
         @media screen and (max-width: 700px) {
             flex-wrap: wrap; 
+            padding: 1em; 
         }
 
         .left-col {
@@ -26,7 +27,8 @@
             flex-direction: column; 
 
             @media screen and (max-width: 700px) {
-                display: none;  
+                // display: none;  
+                margin-left: 2em; 
             }
 
             img {
@@ -51,10 +53,16 @@
             // justify-content: space-between; 
 
             @media screen and (max-width: 700px) {
-                flex-direction: row;
-                justify-content: space-between;  
-                width: 100%; 
-                margin: 0 auto; 
+                // flex-direction: row;
+                // justify-content: space-between;  
+                // width: 100%; 
+                // margin: 0 auto;
+                margin-left: 4em;  
+                width: 50%; 
+            }
+
+            @media screen and (max-width: 500px) {
+                flex-wrap: wrap;  
             }
 
             &__group {
@@ -85,6 +93,10 @@
                     @media screen and (max-width: 750px) {
                         font-size: 1em; 
                         width: 130px; 
+                    }
+
+                    @media screen and (max-width: 700px) {
+                        padding-left: 0; 
                     }
                 }
             }

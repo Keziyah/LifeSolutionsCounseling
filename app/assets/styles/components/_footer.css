@@ -1,17 +1,14 @@
 @import '../base/_variables';
 
 footer {
-    // position: relative; 
     right: 0;
     bottom: 0;
     left: 0;
-    // padding-top: 0.5rem;
     height: 5vh; 
     background: $main-blue; 
     color: white; 
     font-size: 1rem;
     width: 100%; 
-    // text-align: center;
 
     .foot {
         padding-left: 3em; 

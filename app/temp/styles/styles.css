@@ -499,8 +499,15 @@ button:focus {
 }
 
 .hero .container {
-        padding: 3em; 
+        padding: 5em 3em 3em 3em;
     }
+
+@media screen and (max-height: 400px) {
+
+.hero .container {
+            padding: 3em 3em 0 3em
+    }   
+        }
 
 .hero__content {
         // padding-top: 7%; 
@@ -544,6 +551,10 @@ button:focus {
                 width: 100%
         } 
             }
+
+.hero__content--name {
+            width: 50%;            
+        }
 
 .hero h1 {
     font-family: 'Oswald', sans-serif; 
@@ -589,6 +600,15 @@ button:focus {
 @media screen and (max-width: 420px) {
 
 .hero h1 {
+        font-size: 2em
+} 
+    }
+
+@media screen and (max-height: 400px) {
+
+.hero h1 {
+        margin-bottom: 0;
+        margin-top: 0.5em;  
         font-size: 2em
 } 
     }
@@ -679,6 +699,15 @@ button:focus {
     } 
         }
 
+.help h4 {
+        margin: 0 auto;  
+        color: white; 
+        font-family: 'Lato', sans-serif;
+        font-weight: 300; 
+        position: relative;
+        bottom: 15px; 
+    }
+
 .header {
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0.8);
@@ -697,13 +726,34 @@ button:focus {
         text-align: center;
         padding: 14px 16px;
         font-family: 'Oswald', sans-serif; 
-        text-transform: uppercase; 
+        text-transform: uppercase;
     }
+
+@media screen and (max-width: 500px) {
+
+.header h4 {
+            font-size: 0.9em
+    } 
+        }
+
+@media screen and (max-width: 370px) {
+
+.header h4 {
+            padding: 14px 12px
+    } 
+        }
 
 .header img {
             padding-top: 5px; 
-            padding-left: 3em; 
+            padding-left: 3em;
         }
+
+@media screen and (max-width: 500px) {
+
+.header img {
+                padding-left: 0
+        } 
+            }
 
 .nav-up { //when you scroll down
     transition-timing-function: ease-in; 
@@ -718,8 +768,15 @@ button:focus {
     -webkit-transition: 0.5s; 
     transition: 0.5s; 
     -webkit-transform: translateY(0); 
-            transform: translateY(0);  
+            transform: translateY(0);
 }
+
+@media screen and (max-width: 370px) {
+
+.nav-down {
+        padding: 0 1.5em
+} 
+    }
 
 .overview {
     display: -webkit-box;
@@ -1125,7 +1182,8 @@ button:focus {
 
 .contact__main {
             -ms-flex-wrap: wrap;
-                flex-wrap: wrap
+                flex-wrap: wrap; 
+            padding: 1em
     } 
         }
 
@@ -1144,8 +1202,9 @@ button:focus {
 @media screen and (max-width: 700px) {
 
 .contact__main .left-col {
-                display: none
-        }  
+                // display: none;  
+                margin-left: 2em
+        } 
             }
 
 .contact__main .left-col img {
@@ -1180,16 +1239,21 @@ button:focus {
 @media screen and (max-width: 700px) {
 
 .contact__main .mid-col {
-                -webkit-box-orient: horizontal;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: row;
-                        flex-direction: row;
-                -webkit-box-pack: justify;
-                    -ms-flex-pack: justify;
-                        justify-content: space-between;  
-                width: 100%; 
-                margin: 0 auto
+                // flex-direction: row;
+                // justify-content: space-between;  
+                // width: 100%; 
+                // margin: 0 auto;
+                margin-left: 4em;  
+                width: 50%
         } 
+            }
+
+@media screen and (max-width: 500px) {
+
+.contact__main .mid-col {
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap
+        }  
             }
 
 .contact__main .mid-col__group {
@@ -1235,6 +1299,13 @@ button:focus {
 .contact__main .mid-col__group p {
                         font-size: 1em; 
                         width: 130px
+                } 
+                    }
+
+@media screen and (max-width: 700px) {
+
+.contact__main .mid-col__group p {
+                        padding-left: 0
                 } 
                     }
 
@@ -1400,17 +1471,14 @@ button:focus {
                         }
 
 footer {
-    // position: relative; 
     right: 0;
     bottom: 0;
     left: 0;
-    // padding-top: 0.5rem;
     height: 5vh; 
     background: #005277; 
     color: white; 
     font-size: 1rem;
-    width: 100%; 
-    // text-align: center;
+    width: 100%;
 }
 
 footer .foot {
@@ -1445,10 +1513,22 @@ footer {
 
 /*BASE*/
 
+.site-wrapper {
+    overflow-x: hidden; 
+}
+
+/*For fade in on scroll - hide the sections first*/
+
+.hideme {
+    opacity:0;
+}
+
 /*LINKS*/
 
 a {
     color: inherit;
+
+    cursor: pointer;
 }
 
 a:hover {

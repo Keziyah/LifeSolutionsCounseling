@@ -9,7 +9,11 @@
     background-size: cover; 
 
     .container {
-        padding: 3em; 
+        padding: 5em 3em 3em 3em; 
+
+        @media screen and (max-height: 400px) {
+            padding: 3em 3em 0 3em;   
+        }
     }
 
     &__content {
@@ -40,6 +44,10 @@
             @media screen and (max-width: 600px) {
                 width: 100%; 
             }
+        }
+
+        &--name {
+            width: 50%;            
         }
     }
 
@@ -72,6 +80,12 @@
     }
 
     @media screen and (max-width: 420px) {
+        font-size: 2em; 
+    }
+
+    @media screen and (max-height: 400px) {
+        margin-bottom: 0;
+        margin-top: 0.5em;  
         font-size: 2em; 
     }
 }
@@ -133,5 +147,14 @@
         @media screen and (max-width: 340px) {
             font-size: 2.5em; 
         }
+    }
+
+    h4 {
+        margin: 0 auto;  
+        color: white; 
+        font-family: $lato;
+        font-weight: 300; 
+        position: relative;
+        bottom: 15px; 
     }
 }
