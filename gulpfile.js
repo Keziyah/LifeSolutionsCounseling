@@ -62,10 +62,15 @@ gulp.task('useref', function(){ //concatenates all files into one
   return gulp.src('app/*.html')
     .pipe(useref())
     // Minifies only if it's a JavaScript file
-    .pipe(gulpIf('*.js', uglify())) //if it's a js file, use uglify to minify it
+    // .pipe(gulpIf('*.js', uglify())) //if it's a js file, use uglify to minify it
     .pipe(gulpIf('*.css', cssnano())) //if it's a css file, use cssnano to minify it
     .pipe(gulp.dest('dist'))
 });
+
+gulp.task('js', function() {
+  return gulp.src('app/assets/src/*.js')
+         .pipe(gulp.dest('dist/assets/src'))
+})
 
 //Optimize the images (and don't run this process on images that have already done it)
 gulp.task('images', function(){
@@ -83,7 +88,7 @@ gulp.task('clean:dist', function() { //Clean out the dist folder
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist', 
-    ['useref', 'images'],
+    ['useref', 'js', 'images'],
     callback
   )
 })

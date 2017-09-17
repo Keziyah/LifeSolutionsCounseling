@@ -151,7 +151,8 @@
     }
 
     h4 {
-        margin: 0 auto;  
+        margin: 0 auto; 
+        text-align: center;  
         color: white; 
         font-family: $lato;
         font-weight: 300; 
