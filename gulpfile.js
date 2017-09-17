@@ -58,7 +58,7 @@ gulp.task("cssInject", ["styles"],  function() {
 });
 
 //Create a dist folder for production, then run these tasks
-gulp.task('useref', function(){ //concatenates all js files into one
+gulp.task('useref', function(){ //concatenates all files into one
   return gulp.src('app/*.html')
     .pipe(useref())
     // Minifies only if it's a JavaScript file
@@ -74,7 +74,7 @@ gulp.task('images', function(){
   .pipe(cache(imagemin({
       interlaced: true
     })))
-  .pipe(gulp.dest('dist/images'))
+  .pipe(gulp.dest('dist/assets/images'))
 });
 
 gulp.task('clean:dist', function() { //Clean out the dist folder

@@ -3,7 +3,8 @@
 .hero {
     height: 100vh;
     width: 100%; 
-    background-image: url('/assets/images/working.png'); 
+    background-image: url('../../assets/images/working.png'); 
+    /*IN DIST FOLDER, CHANGE THIS PATH TO '../assets/images.working.png' */
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
