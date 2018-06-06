@@ -28,7 +28,7 @@ gulp.task("styles", function() {
     console.log(errorInfo.toString()); //lets us know what's wrong
     this.emit("end"); //this finishes gulp tasks even if there's an error
   })
-  .pipe(gulp.dest("./app/temp/styles"));
+  .pipe(gulp.dest("./app/temp"));
 });
 
 gulp.task("watch", function() {
@@ -53,7 +53,7 @@ gulp.task("watch", function() {
 });
 
 gulp.task("cssInject", ["styles"],  function() {
-  return gulp.src("./app/temp/styles/styles.css")
+  return gulp.src("./app/temp/styles.css")
   .pipe(browserSync.stream());
 });
 
@@ -61,16 +61,15 @@ gulp.task("cssInject", ["styles"],  function() {
 gulp.task('useref', function(){ //concatenates all files into one
   return gulp.src('app/*.html')
     .pipe(useref())
-    // Minifies only if it's a JavaScript file
-    // .pipe(gulpIf('*.js', uglify())) //if it's a js file, use uglify to minify it
+    .pipe(gulpIf('*.js', uglify())) //if it's a js file, use uglify to minify it
     .pipe(gulpIf('*.css', cssnano())) //if it's a css file, use cssnano to minify it
     .pipe(gulp.dest('dist'))
 });
 
-gulp.task('js', function() {
-  return gulp.src('app/assets/src/*.js')
-         .pipe(gulp.dest('dist/assets/src'))
-})
+// gulp.task('js', function() {
+//   return gulp.src('app/assets/src/*.js')
+//          .pipe(gulp.dest('dist/assets/src'))
+// })
 
 //Optimize the images (and don't run this process on images that have already done it)
 gulp.task('images', function(){
@@ -88,7 +87,7 @@ gulp.task('clean:dist', function() { //Clean out the dist folder
 
 gulp.task('build', function (callback) {
   runSequence('clean:dist', 
-    ['useref', 'js', 'images'],
+    ['useref', 'images'],
     callback
   )
 })

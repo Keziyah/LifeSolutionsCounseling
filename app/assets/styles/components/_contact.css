@@ -187,6 +187,7 @@
                     margin: 0; 
                     font-weight: 400; 
                     letter-spacing: 1px;
+                    color: #ddd;
                 }
             }
 
@@ -210,7 +211,7 @@
 
                     button {
                         background-color: black; 
-                        margin-left: 10px; 
+                        /* margin-left: 10px;  */
 
                         @media screen and (max-width: 390px) {
                             margin-left: 0;  
@@ -223,4 +224,9 @@
         }
     }
 
+}
+
+#result {
+    display: none; 
+    padding: 6em; 
 }

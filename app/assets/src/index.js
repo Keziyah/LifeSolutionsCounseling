@@ -104,6 +104,8 @@ $( window ).on('load', function() {
 	});
 	
 	});
+
+	//GOOGLE MAPS
 	
 	$(document).ready(function() {
 		//Google Maps JS   https://codepen.io/hubpork/pen/xriIz 
@@ -152,4 +154,42 @@ $( window ).on('load', function() {
 	}
 	
 	google.maps.event.addDomListener(window, 'load', initialize);
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//********** CONTACT FORM ****************//
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$( "#contact-form" ).submit(function( event ) {
+	var data = $('#contact-form').serialize();  
+	event.preventDefault();
+	$("#contact-form").hide()
+	// $('#result').show()
+  
+	if($('#gotcha').val()) {
+	  $('#success-error').text("Go away, spambot!")
+	  return false; 
+	} else {
+	  $.ajax({
+		url: "https://formspree.io/christine@life-solutions-counseling.com", 
+		method: "POST",
+		data: data,
+		dataType: "json", 
+		success: function (stuff) {
+		  $('#success-error').text("Thanks! We'll be in touch.")
+	  },
+	  error: function (error) {
+		  console.error(error)
+		  $('#success-error').text("Sorry, please try again.")
+	  }
 	})
+  }
+  });
+  
+  $('#msg-again').on('click', function() {
+	$("#contact-form").show()
+	$('#result').hide()
+  })
+  
+})
+
