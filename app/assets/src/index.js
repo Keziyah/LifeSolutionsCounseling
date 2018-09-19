@@ -111,8 +111,8 @@ $( window ).on('load', function() {
 		//Google Maps JS   https://codepen.io/hubpork/pen/xriIz 
 		//Set Map
 		function initialize() {
-			var myLatlng = new google.maps.LatLng(28.306171,-81.439076);
-			var imagePath = 'https://m.schuepfen.ch/icons/helveticons/black/60/Pin-location.png'
+			var myLatlng = new google.maps.LatLng(28.297563,-81.425323);
+			var imagePath = '../assets/images/mapmarker.png'
 			var mapOptions = {
 				zoom: 15,
 				center: myLatlng,
@@ -161,34 +161,35 @@ $( window ).on('load', function() {
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 $( "#contact-form" ).submit(function( event ) {
-	var data = $('#contact-form').serialize();  
-	event.preventDefault();
-	$("#contact-form").hide()
-	// $('#result').show()
+	// var data = $('#contact-form').serialize();  
+	// event.preventDefault();
+// 	$("#contact-form").hide()
+// 	// $('#result').show()
   
-	if($('#gotcha').val()) {
-	  $('#success-error').text("Go away, spambot!")
-	  return false; 
-	} else {
-	  $.ajax({
-		url: "https://formspree.io/christine@life-solutions-counseling.com", 
-		method: "POST",
-		data: data,
-		dataType: "json", 
-		success: function (stuff) {
-		  $('#success-error').text("Thanks! We'll be in touch.")
-	  },
-	  error: function (error) {
-		  console.error(error)
-		  $('#success-error').text("Sorry, please try again.")
-	  }
-	})
-  }
-  });
+// 	if($('#gotcha').val()) {
+// 	  $('#success-error').text("Go away, spambot!")
+// 	  return false; 
+// 	} 
+// 	else {
+// 	  $.ajax({
+// 		url: "https://formspree.io/christine@life-solutions-counseling.com", 
+// 		method: "POST",
+// 		data: data,
+// 		dataType: "json", 
+// 		success: function (stuff) {
+// 		  $('#success-error').text("Thanks! We'll be in touch.")
+// 	  },
+// 	  error: function (error) {
+// 		  console.error(error)
+// 		  $('#success-error').text("Sorry, please try again.")
+// 	  }
+// 	})
+//   }
+//   });
   
-  $('#msg-again').on('click', function() {
-	$("#contact-form").show()
-	$('#result').hide()
+//   $('#msg-again').on('click', function() {
+// 	$("#contact-form").show()
+// 	$('#result').hide()
   })
   
 })
